@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css" />
+  <title>Exam - 2 || Road Signs</title>
+</head>
+
+<body>
+  <!-- main tag -->
+  <main>
+    <!-- welcome page section -->
+    <section class="welcome-page">
+      <h1 class="welcome-text">You are welcome to play game!</h1>
+      <button class="individual-game">Individual</button>
+    </section>
+
+    <!-- page with form to get calues from selectors -->
+    <section class="input-page hide">
+      <form class="js-form">
+        <strong class="select-top-text">Difficulties</strong>
+        <select class="select-game-difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button class="input-field-btn-submit">start game</button>
+      </form>
+    </section>
+
+    <!-- main page section wheere all data rendered -->
+    <section class="main-game-section" style="display: none">
+      <div class="block-game">
+        <div class="heade-block">
+          <p class="game-difficulty">game difficulty:</p>
+          <p class="score-for-game"></p>
+        </div>
+        <h2 class="game-title">Lorem, ipsum dolor.</h2>
+        <ul class="game-cards"></ul>
+      </div>
+    </section>
+
+    <section class="result-page-winner hide">
+      <h1 class="you-win-title">You are winner</h1>
+      <p class="your-scrore">your score: 45</p>
+      <button class="restart-game-btn">restart the game</button>
+    </section>
+
+    <section class="result-page-loser hide">
+      <h1 class="you-lose-title">You failed</h1>
+      <p class="your-scrore-lose">your score: 45</p>
+      <button class="restart-game-btn-lose">restart the game</button>
+    </section>
+  </main>
+
+  <!-- this is the template for the main cards  -->
+  <template class="game-card-template">
+    <li class="game-card correct">
+      <img class="card-img" src="https://placehold.co/600x400" alt="game-image" />
+      <div class="gif-correct hide">
+        <img src="./images/checkmark.gif" alt="correct answer gif" class="gif-correct" />
+      </div>
+      <div class="gif-wrong hide">
+        <img src="./images/error.png" alt="correct answer gif" class="gif-correct" />
+      </div>
+    </li>
+  </template>
+
+  <!-- audios for wrong and correct answer -->
+  <audio id="audioCorrect" src="./audio/correct-answer.mp3"></audio>
+  <audio id="audioWrong" src="./audio/wrong-answer.mp3"></audio>
+
+  <!-- script tags to parse and run JS  -->
+  <script src="./signs.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

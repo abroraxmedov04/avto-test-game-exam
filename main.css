@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "myFont" ;
+    src: url("./fonts/Joystix.ttf");
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+li, ul, ol, a {
+    list-style: none;
+    text-decoration: none;
+    color: initial;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.welcome-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("./images/back-to-future.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.welcome-text{
+    font-weight: bold;
+    color: white;
+    font-size: 3rem;
+}
+
+.individual-game{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.individual-game:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.block{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+.input-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("./images/back-to-future.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
+.js-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.select-top-text{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.select-game-difficulty{
+    background: #fff;
+    padding: 10px;
+    appearance: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.input-field-btn-submit{
+    padding: 10px;
+    background: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.input-field-btn-submit:hover{
+ background: #000;
+ color: #FFF;
+}
+
+.main-game-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("./images/back-to-future.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.block-game {
+    background: #ffffff;
+    width: 80%;
+    max-width: 90%;
+    height: auto;
+    max-height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.heade-block{
+    display: flex;
+    gap: 100px;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+.heade-block{
+    padding: 5px;
+    background: #0000004f;
+}
+
+/* Game Cards Grid */
+.game-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    justify-items: center;
+    padding: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+
+
+.game-card {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.game-title{
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+
+.gif-correct{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 50px;
+}
+
+.gif-wrong{
+    position: absolute;
+    z-index: 100;
+    bottom: 50px;
+    right: 0;
+    width: 50px;
+}
+
+.result-page-winner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("./images/You\ win.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.you-win-title{
+    font-family: "myFont" ;
+    color: #FFF;
+    font-size: 4.5rem;
+}
+
+.your-scrore{
+    font-family: "myFont" ;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.restart-game-btn{
+    padding: 10px;
+    width: 10%;
+    background: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.restart-game-btn:hover{
+    background: #000;
+    color: #FFF;
+}
+
+.result-page-loser{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("./images/You\ win.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.you-lose-title{
+    font-family: "myFont" ;
+    color: #FFF;
+    font-size: 4.5rem;
+}
+
+.your-scrore-lose{
+    font-family: "myFont" ;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.restart-game-btn-lose{
+    padding: 10px;
+    width: 10%;
+    background: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.restart-game-btn-lose:hover{
+    background: #000;
+    color: #FFF;
+}
+
+.hide{
+    display: none;
+}
