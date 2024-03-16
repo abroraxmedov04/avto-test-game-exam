@@ -154,8 +154,13 @@ function handleCorrectCard(clickedCard) {
 
   setTimeout(() => {
     clickedCard.style.opacity = "0";
+  }, 2000); 
+
+  if (resultArray.length > 0) {
     displayRandomTitle();
-  }, 1500);
+  } else {
+    endGame();
+  }
 }
 
 // function in order to work with incorrect answer
@@ -182,7 +187,6 @@ function handleIncorrectCard(clickedCard) {
     if (gifWrong) {
       gifWrong.classList.add("hide");
     }
-    displayRandomTitle();
   }, 2000);
 }
 
